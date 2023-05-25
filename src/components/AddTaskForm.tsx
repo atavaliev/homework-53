@@ -4,7 +4,6 @@ interface IAddTaskForm {
     handleAddTask: React.MouseEventHandler;
     onInputChange: React.ChangeEventHandler<HTMLInputElement>;
     currentTask: string;
-
 }
 
 const AddTaskForm: React.FC<IAddTaskForm> = ({handleAddTask, currentTask, onInputChange}) => {

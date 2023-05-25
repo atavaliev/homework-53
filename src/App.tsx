@@ -45,7 +45,7 @@ const App = () => {
                 return task;
             });
         });
-    }
+    };
 
     return (
         <div className="App">
@@ -71,7 +71,7 @@ const App = () => {
                             })
                         }
                     </div>)
-                    : <div className="no-task">There is no any Active Task</div>
+                    : <div className="no-task">There is no any  Task</div>
                 }
             </div>
         </div>
