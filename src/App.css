@@ -11,15 +11,15 @@
   text-shadow: 0 0 7px #ffffff70;
 }
 
-.App .inner {
+.App .wrapper {
   margin:20px auto;
+  max-width: 400px;
   width: 100%;
   padding: 0 15px;
 
 }
 .form-add {
   display: flex;
-  max-width: 300px;
   width: 100%;
   margin: 0 auto;
 }
@@ -49,4 +49,29 @@
 
 .form-add button:hover {
   background: #5e5891;
+}
+
+.task-list {
+  margin-top: 15px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+
+  border-radius: 5px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.icon-delete {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.icon-delete svg:hover {
+  fill:red;
 }
