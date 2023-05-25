@@ -1,14 +1,28 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const AddTaskForm = () => {
+interface IAddTaskForm {
+    handleAddTask: React.MouseEventHandler;
+    onInputChange: React.ChangeEventHandler<HTMLInputElement>;
+    currentTask: string;
+
+}
+
+const AddTaskForm: React.FC<IAddTaskForm> = ({handleAddTask, currentTask, onInputChange}) => {
     return (
-        <form className="form-add">
+        <div
+            className="form-add"
+        >
             <input
                 type="text"
                 placeholder="Add new task"
+                onChange={onInputChange}
+                value={currentTask}
             />
-            <button>Add</button>
-        </form>
+            <button
+                onClick={(e) => handleAddTask(e)}
+                disabled={currentTask.length < 1}
+            >Add</button>
+        </div>
     );
 };
 

@@ -71,7 +71,30 @@
   margin-left: auto;
   cursor: pointer;
 }
+.icon-delete svg {
+  fill:#000;
+}
 
 .icon-delete svg:hover {
   fill:red;
+}
+
+.task-item:has(input:checked) {
+  background: #0ba30b;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.task-item:has(input:checked) svg {
+  fill:#fff;
+}
+.task-item:has(input:checked) svg:hover {
+  fill:red;
+}
+
+.no-task {
+  margin-top: 30px;
+  font-size: 24px;
+  padding: 10px;
+  background: #ffffff50;
 }
